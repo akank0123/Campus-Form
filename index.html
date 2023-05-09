@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Ambessador Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title">
+          <img src="http://drive.google.com/uc?export=view&id=1RQNI1Khnhj4Z-YSKj3F3Z3ZouoT3bmC0" alt="Herody" width="70">
+          <h6 style="margin-left: 15%;">Registration Form</h6>
+        </div>
+        <form name="google-sheet" method="POST">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="row">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email address" required name="Email">
+          </div>
+          <div class="row">
+            <i class="fas fa-phone"></i>
+            <input type="number" placeholder="Mobile Number" required name="Mobile No" pattern="[1-9]{1}[0-9]{9}">
+          </div>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input type="text" placeholder="College Name" required name="College">
+          </div>
+          <div class="row">
+            <i class="fas fa-home"></i>
+            <input type="text" placeholder="City" required name="City">
+          </div>
+          <div class="row">
+            <i class="fas fa-phone"></i>
+            <input type="number" placeholder="Whatsapp Number" required name="Whatsapp No">
+          </div>
+          <div class="row">
+            <i class="fas fa-pen"></i>
+            <input type="text" placeholder="Why Should You hire for this program ?" required name="Details">
+          </div>
+          <div class="row button">
+            <input type="submit" value="Submit" class="submitId">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxcXEgbP2MTS90BTg25xi9mIzvofzHhd1Bs_265ms6OAWSjIQpyw1wSQtBAy3sLReJ5/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+  </body>
+</html>
