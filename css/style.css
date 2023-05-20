@@ -1688,7 +1688,7 @@ a.close-location-other-ca {
 
 /* Footer */
 footer{
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 }
 
