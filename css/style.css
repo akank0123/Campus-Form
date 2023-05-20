@@ -128,7 +128,7 @@ li {
 
 /* Testinomal Start*/
 .testimonial-section{
-  background: linear-gradient(blue,#16a085,#fb9c9a);
+  background-image: url(../img/service-bg.jpg);
   /* background-color: #16a085; */
   padding: 50px 0;
   min-height: 20vh;
