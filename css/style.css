@@ -1688,10 +1688,12 @@ a.close-location-other-ca {
 
 /* Footer */
 footer{
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 }
-
+@media (max-width:1700px) {
+  footer{position: absolute;}
+}
 @media (max-height:800px){
 	footer { position: static; }
 }
