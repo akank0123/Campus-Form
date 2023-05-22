@@ -247,7 +247,7 @@ li {
   -moz-transition: background-color .5s;
 }
 .features-item:hover {
-  background: #16a085;
+  background: #11B0FB;
   /* background: linear-gradient(105deg, rgba(51,204,197,1) 0%, rgba(8,141,195,1) 100%); */
 }
 
