@@ -1034,12 +1034,12 @@ form#campus_ambassador_form .btn input[type="submit"]:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background:#16a085;
+  background:#11B0FB;
   color: white;
   font-weight: 700;
   font-size: 24px;
   padding: 20px 26px;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 .campus-form-image{
   margin: -20px -32px 0 0 ;
